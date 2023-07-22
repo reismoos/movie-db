@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import { Spin } from 'antd'
+import { Spin, Alert, Space } from 'antd'
 
 import MovieDbService from '../../services/Movie-db-service'
 import FilmCard from '../card/filmCard'
@@ -61,14 +61,28 @@ export default class FilmList extends Component {
         />
       )
     })
-    const spinner = loading ? <Spin /> : null
+    const errorMessage = error ? <ErrorMessage /> : null
+    const spinner = loading ? <Spin size={'large'} style={{ margin: '0 auto' }} /> : null
     const content = !(loading || error) ? filmCards : null
-    console.log(content, 'content')
     return (
       <div className="film-list">
         {spinner}
         {content}
+        {errorMessage}
       </div>
     )
   }
+}
+
+const ErrorMessage = () => {
+  return (
+    <Space
+      direction="vertical"
+      style={{
+        width: '100%',
+      }}
+    >
+      <Alert message="Error" description="Something gone wrong. Try again later" type="error" showIcon />
+    </Space>
+  )
 }
