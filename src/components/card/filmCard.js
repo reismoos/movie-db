@@ -18,12 +18,11 @@ export default class FilmCard extends Component {
           style={{
             width: 451,
             height: 282,
+            boxShadow: 'none',
           }}
           bordered={false}
-          bodyStyle={{ boxShadow: 'none' }}
         >
           <Meta
-            className="dfdfd"
             avatar={
               <img
                 src={

@@ -1,10 +1,6 @@
 .film-list {
     display: flex;
     gap: 37px;
-    padding: 20px 0 0 32px;
     flex-wrap: wrap;
-    max-width: 1010px;
-    margin: 0 auto;
-    background-color: #FFF;
-    min-height: 100vh;
+    margin-top: 20px;
 }
