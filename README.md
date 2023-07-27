@@ -1,1 +1,1 @@
-[Ссылка на проект](reismoos-movie-db.vercel.app)
+[Ссылка на приложение](https://reismoos-movie-db.vercel.app)
