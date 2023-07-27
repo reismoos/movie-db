@@ -1,5 +1,7 @@
 .ant-card {
     box-sizing: border-box;
+    width: 451px;
+    height: 282px;
 }
 
 .ant-card .ant-card-body {
@@ -12,4 +14,84 @@
 
 .ant-card .ant-card-meta-title {
     margin-top: 10px;
+    width: 85%;
 }
+
+.ant-rate .ant-rate-star:not(:last-child) {
+    margin-inline-end: 4.5px
+}
+
+.film-card__rating {
+    width: 30px;
+    height: 30px;
+    border: solid 2px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px 8px 0 0;
+}
+
+.film-card__rating p {
+    margin: auto;
+    font-size: 12px;
+    color: black;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.ant-card-meta-avatar img {
+    width: 183px;
+    height: 279px;
+}
+
+@media screen and (max-width: 1009px) {
+    .ant-card {
+        width: 387px;
+        height: 245px;
+    }
+
+    .ant-card-body {
+        height: 100%;
+    }
+
+    .ant-card-meta-avatar {
+        position: absolute;
+    }
+
+    .ant-card-meta-avatar img {
+        width: 60px;
+        height: 91px;
+    }
+
+    .ant-card .ant-card-meta-title {
+        width: 67%;
+    }
+
+    .ant-card-meta {
+        height: 100%;
+    }
+
+    .ant-typography, .ant-card-meta-title {
+        position: relative;
+        left: 75px;
+    }
+
+    .film-description {
+        position: relative;
+        left: 10px;
+    }
+
+    .ant-rate {
+        left: 10px;
+    }
+
+    .film-genres {
+        display: flex;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+
+  }

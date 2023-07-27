@@ -7,6 +7,13 @@ export default class SearchForm extends Component {
   }
 
   render() {
-    return <Input placeholder="Basic usage" onChange={this.props.onSearchChange} style={{ marginRight: 20 }} />
+    return (
+      <Input
+        placeholder="Basic usage"
+        onChange={this.props.onSearchChange}
+        style={{ marginRight: 20 }}
+        value={this.props.searchingValuet}
+      />
+    )
   }
 }
